@@ -12,15 +12,25 @@ char exclamation = '!';
 //println(mr, period, student, is, areYouSerious); //Commas put a space between var
 //println(mr+period+student+space+is+space+areYouSerious+space+exclamation); //plus: no space
 //
-//println(mr+period, student, is, period+period+period, "\t\t\t"+ areYouSerious+space+exclamation); //Character escapes: letter is actually code b/c back slash, t - tab, n = new Line
-//138: period = 46 (ascii decimal number), thus 46*3 = 138
 //
-void setup(){}//End setup
+
 //
-void draw(){}//End draw
+void setup() 
+{
+  //Convas Setup
+  fullScreen();
+  //size();
+}//End setup
 //
-void keyPressed(){}//End keyPressed
+void draw()
+{
+  //println(mr+period, student, is, period+period+period, "\t\t\t"+ areYouSerious+space+exclamation); //Character escapes: letter is actually code b/c back slash, t - tab, n = new Line
+  //138: period = 46 (ascii decimal number), thus 46*3 = 138
+  
+}//End draw
 //
-void mousePressed(){}//mousePressed
+void keyPressed() {}//End keyPressed
+//
+void mousePressed() {}//End mousePressed
 //
 //End Main Program
