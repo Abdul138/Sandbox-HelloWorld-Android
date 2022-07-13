@@ -28,12 +28,13 @@ void setup()
   if (width >= displayWidth) exit(); //CANVAS is Broken
   if (height >= displayHeight) exit(); //CANVAS is Broken
   if( width >= displayWidth || height >= displayHeight) println("CANVAS is Broken, bigger than display") ; //ERROR Catch
+  //More advanced algorithm
   //
   //Display Geomety
   String ls="Landscape or Square", p="portrait", DO = "Display Oriented", instruct = "Turn on your phone"; //Local variables
   String orientation = (appWidth>= appHeight)? ls:p; // Ternary Operato, Similar Line TF
   println(DO, orientation);
-  if (orientation == p) println(instruct);
+  if (orientation == p) println(instruct); //Landscape is prefered
   if (orientation == ls) {
     println("Good to Go");
   } else{
