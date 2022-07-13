@@ -13,13 +13,14 @@ char exclamation = '!';
 //println(mr+period+student+space+is+space+areYouSerious+space+exclamation); //plus: no space
 //
 //
-
+int appHeight, appWidth;
 //
 void setup() 
 {
   //Convas Setup
   //fullScreen();
-  size(1200, 720); //Display Geometry: Landscape, Protrait, Square
+  size(300, 200); //Display Geometry: Landscape, Protrait, Square
+  //Able to swap key var to test rest of apps
   appWidth = width;
   appHeight = height;
   println(width, height, displayWidth, displayHeight);
@@ -27,6 +28,18 @@ void setup()
   if (width >= displayWidth) exit(); //CANVAS is Broken
   if (height >= displayHeight) exit(); //CANVAS is Broken
   if( width >= displayWidth || height >= displayHeight) println("CANVAS is Broken, bigger than display") ; //ERROR Catch
+  //
+  //Display Geomety
+  String ls="Landscape or Square", p="portrait", DO = "Display Oriented", instruct = "Turn on your phone"; //Local variables
+  String orientation = (appWidth>= appHeight)? ls:p; // Ternary Operato, Similar Line TF
+  println(DO, orientation);
+  if (orientation == p) println(instruct);
+  if (orientation == ls) {
+    println("Good to Go");
+  } else{
+    appWidth = appWidth*0; // appWidht = appWidth*0
+    appHeight *= 0;
+  }
   //println special
 }//End setup
 //
