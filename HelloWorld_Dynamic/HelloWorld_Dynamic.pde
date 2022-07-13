@@ -18,8 +18,9 @@ char exclamation = '!';
 void setup() 
 {
   //Convas Setup
-  fullScreen();
-  //size();
+  //fullScreen();
+  size(1200, 720);
+  println(width, height, displayWidth, displayHeight);
 }//End setup
 //
 void draw()
